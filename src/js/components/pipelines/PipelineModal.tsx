@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactModal from 'react-modal';
 import { connect } from 'react-redux';
 import {Datum} from 'vega-typings';
+import {addPipeline} from '../../actions/pipelineActions';
 import {State} from '../../store';
 import {DatasetRecord} from '../../store/factory/Dataset';
 import {PipelineRecord} from '../../store/factory/Pipeline';
@@ -11,7 +12,6 @@ import DataURL from './DataURL';
 import RawValuesTextArea from './RawValuesTextArea';
 
 const dl = require('datalib');
-const addPipeline = require('../../actions/pipelineActions').addPipeline;
 const exampleDatasets = require('../../constants/exampleDatasets');
 const NAME_REGEX = dsUtils.NAME_REGEX;
 
